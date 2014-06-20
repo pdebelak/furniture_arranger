@@ -16,3 +16,9 @@ header h1 {
 svg {
   border: 1px solid black;
 }
+#deleteFurniture {
+  float: right;
+}
+#addFurniture {
+  float: left;
+}

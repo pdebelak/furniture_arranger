@@ -47,6 +47,11 @@ $(document).ready(function() {
       e.preventDefault();
       var name = $('input[name=delName]').val().replace(/\s/g, '');
       svg.selectAll("rect." + name).remove();
+      for (var i=0;i<dataset.length;i++) {
+        if (name==dataset[i].name) {
+          dataset.splice(i, 1);
+        }
+      }
     });
   function dragmove(d) {
     d3.select(this).attr("y", function() {
